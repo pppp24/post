@@ -56,6 +56,13 @@ body {
     .text-content {
       vertical-align: middle;
       display: table-cell;
+      background: "white";
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    p {
+      font-size: 15px;
     }
   }
 }
@@ -67,13 +74,19 @@ body {
   h4,
   h5,
   p {
-    text-shadow: 0 1px 3px $gray-base;
-    color: white;
-    font-size: 36px;
-    line-height: 60px;
+    color: black;
+    font-size: 25px;
+    line-height: 50px;
   }
   a {
     color: white;
+  }
+  @media (max-width: $screen-sm) {
+    p {
+      font-size: 15px;
+      line-height: 30px;
+    }
+    padding: 10px;
   }
 }
 
@@ -95,6 +108,9 @@ body {
   @media (max-width: $screen-sm) {
     &:nth-of-type(1) {
       padding-top: 30px;
+      p {
+        font-size: 15px;
+      }
     }
   }
 }
